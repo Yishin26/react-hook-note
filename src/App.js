@@ -1,5 +1,7 @@
 import React from "react";
 import Accordion from "./components/Accordion";
+import Search from "./components/search";
+import "../src/style.css";
 
 const items = [
   {
@@ -20,6 +22,8 @@ export default function App() {
   return (
     <div className="App">
       <Accordion items={items} />
+      <hr />
+      <Search />
     </div>
   );
 }

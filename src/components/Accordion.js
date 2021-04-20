@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "semantic-ui-css/semantic.min.css";
-import "../../src/style.css";
 
 const Accordion = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -26,7 +25,7 @@ const Accordion = ({ items }) => {
   return (
     <div>
       <div className="ui styled accordion">{renderedItems}</div>
-      <h1>{activeIndex}</h1>
+      {/*<h1>{activeIndex}</h1>*/}
     </div>
   );
 };
